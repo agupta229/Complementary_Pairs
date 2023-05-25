@@ -1,6 +1,6 @@
-# Complementary_Pairs
-# Written by Meng Zhou
-# Meyerson Lab, Broad Institute and DFCI
+# Complementary Pairs Quantification
+Written by Meng Zhou
+Meyerson Lab, Broad Institute and DFCI
 
 # FastQC
 FastQC v0.11.9 was used with default parameters.
