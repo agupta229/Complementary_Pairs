@@ -105,6 +105,8 @@ General description (Meng 2022/02/07; testing performed in outside notebook)
    The values of CP normalized by library size per million is called CPM.
 Note: pipeline.sh calls on get_complementary_count.multiple.sh, which calls on
 append_nh.py and parse.py 
+* Be sure to change paths to append_nh.py and parse.py within get_complementary_count.multiple.sh prior to running
+* pipeline.sh as written as a slurm job --> edit as needed to make easier to use; update path to get_complementary_count.multiple.sh within pipeline.sh 
 ```
 bash pipeline.sh bam forwardbg reversebg outputprefix
 submit as kraken job
@@ -127,6 +129,7 @@ cp filtered_all_merged_counts.complementary.multiple.count.txt table.complementa
 ```
 
 5. Run 00_get_cpm.r to reformat table as BED and get more information
+* Be sure to set appropriate file path within 00_get_cpm.r script**
 ```
 Rscript 00_get_cpm.r
 cat table.complementary_count.multiple.dat \
